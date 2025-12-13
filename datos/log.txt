@@ -1,0 +1,268 @@
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/08 22:35:50] - Se realizo la carga inicial de datos
+
+[2025/12/08 22:36:05] - Consulta: informacion del tren: 426
+
+[2025/12/08 22:37:09] - El tren 426 fue asignado a la linea San Martin
+
+[2025/12/08 22:39:07] - Consulta informacion de lineas
+
+[2025/12/08 22:39:59] - Consulta informacion de trenes
+
+[2025/12/08 22:40:17] - Consulta informacion de trenes
+
+[2025/12/08 22:40:36] - Consulta: informacion del tren: 426
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/08 22:42:39] - Se realizo la carga inicial de datos
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 01:15:17] - Se realizo la carga inicial de datos
+
+[2025/12/09 01:17:51] - La estacion: Chacarita se registro exitosamente
+
+[2025/12/09 01:18:10] - Consulta informacion de estaciones
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 01:21:10] - Se realizo la carga inicial de datos
+
+[2025/12/09 01:22:07] - Se elimino la estacion Flores
+
+[2025/12/09 01:23:00] - Consulta informacion de estaciones
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 01:29:28] - Se realizo la carga inicial de datos
+
+[2025/12/09 01:29:36] - Consulta informacion de estaciones
+
+[2025/12/09 01:32:35] - A la estacion Constitucion se le modifico las plataformas a 10
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 01:44:08] - Se realizo la carga inicial de datos
+
+[2025/12/09 01:45:14] - Consulta informacion de lineas
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 01:48:00] - Se realizo la carga inicial de datos
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 01:53:28] - Se realizo la carga inicial de datos
+
+[2025/12/09 01:53:35] - Consulta informacion de estaciones
+
+[2025/12/09 01:54:05] - Consulta: informacion de la estacion Delta
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 01:54:51] - Se realizo la carga inicial de datos
+
+[2025/12/09 01:54:55] - Consulta informacion de estaciones
+
+[2025/12/09 01:55:17] - Consulta: informacion de la estacion Delta
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 01:56:19] - Se realizo la carga inicial de datos
+
+[2025/12/09 01:56:27] - Consulta: informacion de la estacion Delta
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 01:59:14] - Se realizo la carga inicial de datos
+
+[2025/12/09 01:59:30] - Consulta: informacion de la estacion Delta
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:01:10] - Se realizo la carga inicial de datos
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:01:37] - Se realizo la carga inicial de datos
+
+[2025/12/09 02:02:30] - La nueva linea Peron se agrego exitosamente
+
+[2025/12/09 02:03:18] - Consulta informacion de lineas
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:04:57] - Se realizo la carga inicial de datos
+
+[2025/12/09 02:05:28] - Se elimino la estacion: Floresta de la linea: Sarmiento
+
+[2025/12/09 02:05:39] - Consulta informacion de lineas
+
+[2025/12/09 02:06:29] - Se elimino la linea: Sarmiento
+
+[2025/12/09 02:07:47] - La nueva linea Paso se agrego exitosamente
+
+[2025/12/09 02:08:03] - Se elimino la estacion: Marcos Paz de la linea: Paso
+
+[2025/12/09 02:08:17] - Consulta informacion de lineas
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:13:06] - Se realizo la carga inicial de datos
+
+[2025/12/09 02:13:19] - Consulta obtener las ciudades por las que pasa en tren: 123
+
+--------Inicia la ejecucion del programa--------
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:20:06] - Se realizo la carga inicial de datos
+
+[2025/12/09 02:20:18] - Consulta obtener las ciudades por las que pasa en tren: 123
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:21:50] - Se realizo la carga inicial de datos
+
+[2025/12/09 02:22:00] - Consulta obtener las ciudades por las que pasa en tren: 123
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:24:30] - Se realizo la carga inicial de datos
+
+[2025/12/09 02:24:36] - Consulta obtener las ciudades por las que pasa en tren: 123
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:25:59] - Se realizo la carga inicial de datos
+
+[2025/12/09 02:26:06] - Consulta obtener las ciudades por las que pasa en tren: 123
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:26:54] - Se realizo la carga inicial de datos
+
+[2025/12/09 02:26:57] - Consulta obtener las ciudades por las que pasa en tren: 123
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:28:36] - Se realizo la carga inicial de datos
+
+[2025/12/09 02:28:39] - Consulta obtener las ciudades por las que pasa en tren: 123
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:31:51] - Se realizo la carga inicial de datos
+
+[2025/12/09 02:31:56] - Consulta obtener las ciudades por las que pasa en tren: 123
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:40:58] - Se realizo la carga inicial de datos
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:41:41] - Se realizo la carga inicial de datos
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:43:30] - Se realizo la carga inicial de datos
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:48:44] - Se realizo la carga inicial de datos
+
+[2025/12/09 02:48:53] - Consulta de las estaciones que inician con: villa
+
+[2025/12/09 02:49:40] - Consulta de las estaciones que inician con: Villa
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:53:22] - Se realizo la carga inicial de datos
+
+[2025/12/09 02:53:31] - Consulta de las estaciones que inician con: villa
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 02:56:15] - Se realizo la carga inicial de datos
+
+[2025/12/09 02:56:20] - Consulta de las estaciones que inician con: villa
+
+--------Inicia la ejecucion del programa--------
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 03:01:34] - Se realizo la carga inicial de datos
+
+[2025/12/09 03:01:42] - Consulta de las estaciones que inician con: villa
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 03:10:05] - Se realizo la carga inicial de datos
+
+[2025/12/09 03:10:13] - Consulta de las estaciones que inician con: villa
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 03:10:45] - Se realizo la carga inicial de datos
+
+[2025/12/09 03:10:54] - Consulta: informacion de la estacion Villa Crespo
+
+[2025/12/09 03:11:06] - Consulta: informacion de la estacion Constitucion
+
+[2025/12/09 03:11:44] - Consulta de las estaciones que inician con: cons
+
+--------Inicia la ejecucion del programa--------
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 03:14:43] - Se realizo la carga inicial de datos
+
+[2025/12/09 03:14:50] - Consulta: informacion de la estacion Pilar
+
+[2025/12/09 03:15:16] - Se agrego un riel de 200 km entre Pilar y Palermo
+
+[2025/12/09 03:15:46] - Consulta informacion de vias
+
+[2025/12/09 03:16:48] - Se elimino la via entre Pilar y Palermo
+
+[2025/12/09 03:16:56] - Consulta informacion de vias
+
+[2025/12/09 03:18:11] - Se modifico un riel entre Once y Moreno a 700 km
+
+[2025/12/09 03:18:20] - Consulta informacion de vias
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 03:21:52] - Se realizo la carga inicial de datos
+
+[2025/12/09 03:22:12] - Consulta de las estaciones que inician con: villa
+
+[2025/12/09 03:23:21] - Se elimino la estacion Constitucion
+
+[2025/12/09 03:23:29] - Consulta informacion de estaciones
+
+[2025/12/09 03:25:21] - Consulta informacion de vias
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 04:29:08] - Se realizo la carga inicial de datos
+
+[2025/12/09 04:30:17] - Consulta: camino que pasa por menos estaciones entre Constitucion y Merlo
+
+[2025/12/09 04:31:51] - Consulta: camino con menos km entre: Constitucion y Caseros
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 04:36:15] - Se realizo la carga inicial de datos
+
+[2025/12/09 04:36:26] - Consulta: camino entre Caseros y Floresta con limite de 100000 km
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/09 04:39:01] - Se realizo la carga inicial de datos
+
+[2025/12/09 04:39:58] - Consulta: todos los caminos que pasa por Constitucion y Haedo sin pasar por Villa Crespo
