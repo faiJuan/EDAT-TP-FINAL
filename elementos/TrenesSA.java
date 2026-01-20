@@ -794,7 +794,6 @@ public class TrenesSA {
      * Obtener todos los caminos posibles para llegar de A a B sin pasar por una
      * estación C dada
      */
-    // preguntar si es necesario todos los caminos o con 1 es suficiente
     public static void caminosSinEstacion() {
         String estacion1, estacion2, estacionEvitar;
         System.out.println("ingrese la primera estacion");

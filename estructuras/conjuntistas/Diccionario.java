@@ -237,7 +237,8 @@ public class Diccionario {
                 eliminarHoja(n, padre);
             } else {
                 if (n.getIzquierdo() != null && n.getDerecho() != null) {
-                    eliminarCon2Hijos(n);
+                    NodoAVLdicc aux = n;
+                    eliminarCon2Hijos(n, n.getDerecho(), aux, padre);
                 } else {
                     if (n.getIzquierdo() != null) {
                         eliminarCon1Hijo(n, padre, n.getIzquierdo());
@@ -293,28 +294,50 @@ public class Diccionario {
             }
         }
     }
-
-    private void eliminarCon2Hijos(NodoAVLdicc n) {
+    /* 
+    private void eliminarCon2HijosViejo(NodoAVLdicc n) {
         NodoAVLdicc aux1, aux2;
         aux1 = n.getDerecho();
         aux2 = n;
         if (aux1 != null) {
+            // o recursiva
             while (aux1.getIzquierdo() != null) {
                 // busco el mas a la izq de la derecha
                 aux2 = aux1;
                 aux1 = aux1.getIzquierdo();
             }
         }
-
         n.setClave(aux1.getClave());
         n.setDato(aux1.getDato());
 
         NodoAVLdicc hijo = aux1.getDerecho();
 
-        if (aux2.getIzquierdo().getClave().equals(aux1.getClave()))
+        if (aux2.getIzquierdo().getClave().equals(aux1.getClave())) {
             aux2.setIzquierdo(hijo);
-        else
+        } else {
             aux2.setDerecho(hijo);
+        }
+
+    }
+        */
+    private void eliminarCon2Hijos(NodoAVLdicc n, NodoAVLdicc reemplazo, NodoAVLdicc aux, NodoAVLdicc padre) {
+        if (reemplazo.getIzquierdo() != null) {
+            eliminarCon2Hijos(n, reemplazo.getIzquierdo(), reemplazo, aux);
+        } else {
+            n.setClave(reemplazo.getClave());
+            n.setDato(reemplazo.getDato());
+
+            NodoAVLdicc hijo = reemplazo.getDerecho();
+
+            if (aux.getIzquierdo().getClave().equals(reemplazo.getClave())) {
+                aux.setIzquierdo(hijo);
+            } else {
+                aux.setDerecho(hijo);
+            }
+        }
+        aux.recalcularAltura();
+        balancear(aux, padre);
+        aux.recalcularAltura();
     }
 
     public String toString() {

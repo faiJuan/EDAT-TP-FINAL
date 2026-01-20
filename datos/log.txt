@@ -266,3 +266,67 @@
 [2025/12/09 04:39:01] - Se realizo la carga inicial de datos
 
 [2025/12/09 04:39:58] - Consulta: todos los caminos que pasa por Constitucion y Haedo sin pasar por Villa Crespo
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/15 01:30:59] - Se realizo la carga inicial de datos
+
+[2025/12/15 01:31:47] - Se elimino la estacion Villa Devoto
+
+[2025/12/15 01:32:00] - Consulta informacion de vias
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/15 15:58:28] - Se realizo la carga inicial de datos
+
+[2025/12/15 15:58:36] - Consulta informacion de lineas
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/15 16:08:02] - Se realizo la carga inicial de datos
+
+[2025/12/15 16:08:20] - Consulta informacion de trenes
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/15 16:20:00] - Se realizo la carga inicial de datos
+
+[2025/12/15 16:20:50] - Consulta: camino que pasa por menos estaciones entre Constitucion y Marcos Paz
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/15 16:38:57] - Se realizo la carga inicial de datos
+
+[2025/12/15 16:39:13] - Se elimino la estacion Merlo
+
+[2025/12/15 16:39:21] - Consulta informacion de estaciones
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/16 02:12:02] - Se realizo la carga inicial de datos
+
+[2025/12/16 02:12:40] - Se elimino la estacion Villa Devoto
+
+[2025/12/16 02:12:51] - Consulta informacion de vias
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/16 04:47:12] - Se realizo la carga inicial de datos
+
+[2025/12/16 04:47:47] - Se elimino la estacion Merlo
+
+[2025/12/16 04:47:57] - Consulta informacion de estaciones
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/18 02:22:01] - Se realizo la carga inicial de datos
+
+[2025/12/18 02:23:20] - La estacion: Tigra se registro exitosamente
+
+--------Inicia la ejecucion del programa--------
+
+[2025/12/18 02:24:15] - Se realizo la carga inicial de datos
+
+[2025/12/18 02:24:59] - La estacion: Palermu se registro exitosamente
+
+[2025/12/18 02:25:13] - Consulta informacion de estaciones
