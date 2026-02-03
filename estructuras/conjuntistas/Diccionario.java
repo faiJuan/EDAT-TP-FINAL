@@ -271,7 +271,7 @@ public class Diccionario {
         if (padre == null) {
             this.raiz = null;
         } else {
-            if (padre.getIzquierdo() != null) {
+            if (padre.getIzquierdo().getClave().compareTo(n.getClave())==0) {
                 padre.setIzquierdo(null);
             } else {
                 padre.setDerecho(null);

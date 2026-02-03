@@ -330,3 +330,63 @@
 [2025/12/18 02:24:59] - La estacion: Palermu se registro exitosamente
 
 [2025/12/18 02:25:13] - Consulta informacion de estaciones
+
+--------Inicia la ejecucion del programa--------
+
+[2026/02/02 05:20:33] - Se realizo la carga inicial de datos
+
+--------Inicia la ejecucion del programa--------
+
+[2026/02/02 05:21:14] - Se realizo la carga inicial de datos
+
+[2026/02/02 05:21:45] - Consulta: camino entre Constitucion y Tigre con limite de 100000 km
+
+[2026/02/02 05:23:21] - Consulta: camino entre Constitucion y Floresta con limite de 900 km
+
+[2026/02/02 05:23:49] - Consulta: camino entre Constitucion y Floresta con limite de 3000 km
+
+--------Inicia la ejecucion del programa--------
+
+[2026/02/02 23:01:37] - Se realizo la carga inicial de datos
+
+[2026/02/02 23:01:56] - Consulta: camino con menos km entre: Constitucion y Floresta
+
+[2026/02/02 23:03:04] - Consulta: camino con menos km entre: Constitucion y La Matanza
+
+--------Inicia la ejecucion del programa--------
+
+[2026/02/03 01:48:07] - Se realizo la carga inicial de datos
+
+--------Inicia la ejecucion del programa--------
+
+[2026/02/03 01:50:05] - Se realizo la carga inicial de datos
+
+[2026/02/03 01:50:24] - Consulta: todos los caminos que pasa por Once y Zarate sin pasar por Marcos Paz
+
+--------Inicia la ejecucion del programa--------
+
+[2026/02/03 01:51:36] - Se realizo la carga inicial de datos
+
+[2026/02/03 01:52:00] - Consulta: todos los caminos que pasa por Once y Zarate sin pasar por Marcos Paz
+
+[2026/02/03 01:52:47] - Consulta: todos los caminos que pasa por Constitucion y Palermo sin pasar por Lobos
+
+--------Inicia la ejecucion del programa--------
+
+[2026/02/03 02:15:23] - Se realizo la carga inicial de datos
+
+[2026/02/03 02:15:48] - Consulta: camino que pasa por menos estaciones entre Constitucion y Floresta
+
+[2026/02/03 02:16:46] - Consulta: camino con menos km entre: Haedo y La Matanza
+
+[2026/02/03 02:19:04] - Consulta: camino entre Haedo y La Matanza con limite de 100000 km
+
+[2026/02/03 02:19:56] - Consulta: camino entre Haedo y La Matanza con limite de 540 km
+
+--------Inicia la ejecucion del programa--------
+
+[2026/02/03 02:20:14] - Se realizo la carga inicial de datos
+
+[2026/02/03 02:20:42] - Se elimino la estacion Merlo
+
+[2026/02/03 02:20:53] - Consulta informacion de estaciones

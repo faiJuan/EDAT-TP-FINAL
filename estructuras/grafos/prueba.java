@@ -25,7 +25,7 @@ public class prueba {
 
         //grafo.insertarArco(6, 2, 5);
         
-        l2=grafo.caminoMasCorto(5, 2);
+        //l2=grafo.caminoMasCorto(5, 2);
         //l2=grafo.caminosSinUnVertice(5, 2,4);
         //l2=grafo.caminoConLimiteKm(5, 2,4);
         //l2=grafo.caminoMenorPeso(5, 2);

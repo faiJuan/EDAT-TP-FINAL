@@ -755,7 +755,7 @@ public class TrenesSA {
         } else if (!estaciones.pertenece(estacion2)) {
             System.out.println("La estacion: " + estacion2 + " no existe");
         } else {
-            Lista recorrido = vias.caminoMasCorto(estacion1, estacion2);
+            Lista recorrido = vias.caminoCorto(estacion1, estacion2);
             if (!recorrido.esVacia()) {
                 System.out.println(
                         "El camino que pasa por menos estaciones entre: " + estacion1 + " y " + estacion2 + " es:");
@@ -810,7 +810,7 @@ public class TrenesSA {
         } else if (!estaciones.pertenece(estacionEvitar)) {
             System.out.println("La estacion: " + estacionEvitar + ", que se quiere evitar no existe");
         } else {
-            Lista caminos = vias.caminosSinUnVertice(estacion1, estacion2, estacionEvitar);
+            Lista caminos = vias.caminosSinVertice(estacion1, estacion2, estacionEvitar);
             if (!caminos.esVacia()) {
                 System.out.println("Los caminos posibles son:");
                 Lista aux = new Lista();
@@ -846,7 +846,7 @@ public class TrenesSA {
         } else if (limite < 0) {
             System.out.println("kilometraje erroneo, pruebe otra vez");
         } else {
-            Lista resultado = vias.caminoConLimiteKm(estacion1, estacion2, limite);
+            Lista resultado = vias.limitePeso(estacion1, estacion2, limite);
             if (!resultado.esVacia()) {
                 System.out.println("Si existe un camino que tenga menos de " + limite + " kilometros:");
                 System.out.println(resultado.toString());
