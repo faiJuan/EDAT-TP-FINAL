@@ -302,40 +302,42 @@ public class GrafoEtiquetado {
         Lista visitados = new Lista();
         Lista caminoMasCorto = new Lista();
 
-        if (nodoOrigen != null && nodoDestino != null) {
+        if (nodoOrigen != null && nodoDestino != null && nodoOrigen != nodoDestino) {
             caminoMasCorto = caminoCortoAux(nodoOrigen, nodoDestino, caminoMasCorto, visitados);
         }
         return caminoMasCorto;
     }
 
     private Lista caminoCortoAux(NodoVert n, NodoVert destino, Lista caminoCorto, Lista visitados) {
-        if (n != null) {
-            visitados.insertar(n.getElem(), visitados.longitud() + 1);
-            if (n.getElem().equals(destino.getElem())) {
-                if (caminoCorto.esVacia() || caminoCorto.longitud() > visitados.longitud()) {
-                    caminoCorto = visitados.clone();
+
+        visitados.insertar(n.getElem(), visitados.longitud() + 1);
+        if (n.getElem().equals(destino.getElem())) {
+            caminoCorto = visitados.clone();
+        } else {
+            NodoAdy adyacente = n.getPrimerAdy();
+            // visitados.longitud()+1 < caminoCorto.longitud() es la "poda" para que no
+            // ingrese al vertice
+            // ya que suponiendo que si entra y encuentra el elem, la longitud sera como
+            // minimo igual a la lista del camino corto.
+            // verifica que este vacia para encontrar al menos el primer camino
+            // verifica que no este pasando por un nodo ya visitado
+            while (adyacente != null) {
+                NodoVert siguiente = adyacente.getVertice();
+                if (visitados.localizar(siguiente.getElem()) == -1
+                        && (caminoCorto.esVacia() || visitados.longitud() + 1 < caminoCorto.longitud())) {
+                    caminoCorto = caminoCortoAux(adyacente.getVertice(), destino, caminoCorto, visitados);
                 }
-            } else {
-                if (caminoCorto.esVacia() || visitados.longitud() < caminoCorto.longitud()) {
-                    NodoAdy adyacente = n.getPrimerAdy();
-                    // visitados.longitud() < caminoCorto.longitud() es la "poda" y ademas verifica
-                    // que este vacia
-                    // para encontrar al menos un camino
-                    while (adyacente != null) {
-                        // verifica que no este pasando por un nodo ya visitado
-                        if (visitados.localizar(adyacente.getVertice().getElem()) == -1) {
-                            caminoCorto = caminoCortoAux(adyacente.getVertice(), destino, caminoCorto, visitados);
-                        }
-                        adyacente = adyacente.getSigAdyacente();
-                    }
-                }
+                adyacente = adyacente.getSigAdyacente();
             }
-            visitados.eliminar(visitados.longitud());
+
         }
+        visitados.eliminar(visitados.longitud());
+
         return caminoCorto;
     }
 
-    // punto 8.b devuelve el camino con menor peso
+    // punto 8.b devuelve el camino con menor peso o en su defecto el unico camino
+    // que existe
     public Lista caminoMenorPeso(Object origen, Object destino) {
         NodoVert nodoOrigen = ubicarVertice(origen);
         NodoVert nodoDestino = ubicarVertice(destino);
@@ -346,7 +348,7 @@ public class GrafoEtiquetado {
         int[] pesoFinal = new int[1];
         pesoFinal[0] = 0;
 
-        if (nodoOrigen != null && nodoDestino != null) {
+        if (nodoOrigen != null && nodoDestino != null && nodoOrigen != nodoDestino) {
             caminoMasCorto = caminoMenorPesoAux(nodoOrigen, nodoDestino, caminoMasCorto, visitados, pesoActual,
                     pesoFinal, 0);
         }
@@ -355,32 +357,31 @@ public class GrafoEtiquetado {
 
     private Lista caminoMenorPesoAux(NodoVert n, NodoVert destino, Lista caminoCorto, Lista visitados,
             int[] pesoActual, int[] pesoFinal, int peso) {
-        if (n != null) {
-            visitados.insertar(n.getElem(), visitados.longitud() + 1);
-            pesoActual[0] = pesoActual[0] + peso;
-            if (n.getElem().equals(destino.getElem())) {
-                if (caminoCorto.esVacia() || pesoActual[0] < pesoFinal[0]) {
-                    caminoCorto = visitados.clone();
-                    pesoFinal[0] = pesoActual[0];
-                }
-            } else {
-                if (pesoActual[0] < pesoFinal[0] || caminoCorto.esVacia()) {
-                    NodoAdy adyacente = n.getPrimerAdy();
-                    while (adyacente != null) {
-                        if (visitados.localizar(adyacente.getVertice().getElem()) == -1) {
-                            caminoCorto = caminoMenorPesoAux(adyacente.getVertice(), destino, caminoCorto,
-                                    visitados,
-                                    pesoActual,
-                                    pesoFinal, (int) adyacente.getEtiqueta());
-                        }
-                        adyacente = adyacente.getSigAdyacente();
-                    }
-                }
 
+        visitados.insertar(n.getElem(), visitados.longitud() + 1);
+        pesoActual[0] = pesoActual[0] + peso;
+        if (n.getElem().equals(destino.getElem())) {
+            caminoCorto = visitados.clone();
+            pesoFinal[0] = pesoActual[0];
+        } else {
+
+            NodoAdy adyacente = n.getPrimerAdy();
+            while (adyacente != null) {
+                NodoVert siguiente = adyacente.getVertice();
+                int nuevoPeso = (int) adyacente.getEtiqueta();
+                if (visitados.localizar(siguiente.getElem()) == -1 &&
+                        (pesoActual[0] + nuevoPeso < pesoFinal[0] || caminoCorto.esVacia())) {
+                    caminoCorto = caminoMenorPesoAux(siguiente, destino, caminoCorto,
+                            visitados,
+                            pesoActual,
+                            pesoFinal, nuevoPeso);
+                }
+                adyacente = adyacente.getSigAdyacente();
             }
-            pesoActual[0] = pesoActual[0] - peso;
-            visitados.eliminar(visitados.longitud());
         }
+        pesoActual[0] = pesoActual[0] - peso;
+        visitados.eliminar(visitados.longitud());
+
         return caminoCorto;
     }
 
@@ -434,7 +435,7 @@ public class GrafoEtiquetado {
         int peso[] = new int[1];
         peso[0] = 0;
 
-        if (nodoDestino != null && nodoOrigen != null && limiteKm > 0) {
+        if (nodoDestino != null && nodoOrigen != null && limiteKm > 0 && nodoOrigen != nodoDestino) {
             camino = limitePesoAux(nodoOrigen, nodoDestino, camino, visitados, peso, limiteKm, 0);
         }
         return camino;
@@ -442,37 +443,32 @@ public class GrafoEtiquetado {
 
     private Lista limitePesoAux(NodoVert n, NodoVert destino, Lista caminoCorto, Lista visitados, int[] cantPeso,
             int limite, int pesoAnterior) {
-        if (n != null) {
-            visitados.insertar(n.getElem(), visitados.longitud() + 1);
-            cantPeso[0] = cantPeso[0] + pesoAnterior;
-            if (n.getElem().equals(destino.getElem())) {
-                if (cantPeso[0] <= limite) {
-                    caminoCorto = visitados.clone();
-                }
-            } else {
-                if (cantPeso[0] < limite) {
-                    // cantPeso[0] < limite es la "poda"
-                    NodoAdy adyacente = n.getPrimerAdy();
-                    while (adyacente != null) {
 
-                        // verifica que no este pasando por un nodo ya visitado
-                        if (visitados.localizar(adyacente.getVertice().getElem()) == -1) {
-                            caminoCorto = limitePesoAux(adyacente.getVertice(), destino, caminoCorto, visitados,
-                                    cantPeso, limite,
-                                    (int) adyacente.getEtiqueta());
-                        }
-                        if (!caminoCorto.esVacia()) {
-                            adyacente = null;
-                        } else {
-                            adyacente = adyacente.getSigAdyacente();
-                        }
-                    }
+        visitados.insertar(n.getElem(), visitados.longitud() + 1);
+        cantPeso[0] = cantPeso[0] + pesoAnterior;
+        if (n.getElem().equals(destino.getElem())) {
+            caminoCorto = visitados.clone();
+
+        } else {
+            NodoAdy adyacente = n.getPrimerAdy();
+            while (adyacente != null) {
+                NodoVert siguiente = adyacente.getVertice();
+                int nuevoPeso = (int) adyacente.getEtiqueta();
+                if (visitados.localizar(siguiente.getElem()) == -1 && cantPeso[0] + nuevoPeso <= limite) {
+                    caminoCorto = limitePesoAux(siguiente, destino, caminoCorto, visitados,
+                            cantPeso, limite, nuevoPeso);
+                }
+                if (!caminoCorto.esVacia()) {
+                    adyacente = null;
+                } else {
+                    adyacente = adyacente.getSigAdyacente();
                 }
             }
-            visitados.eliminar(visitados.longitud());
-            cantPeso[0] = cantPeso[0] - pesoAnterior;
 
         }
+        visitados.eliminar(visitados.longitud());
+        cantPeso[0] = cantPeso[0] - pesoAnterior;
+
         return caminoCorto;
     }
 
