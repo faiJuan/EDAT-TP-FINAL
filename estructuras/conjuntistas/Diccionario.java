@@ -294,32 +294,7 @@ public class Diccionario {
             }
         }
     }
-    /* 
-    private void eliminarCon2HijosViejo(NodoAVLdicc n) {
-        NodoAVLdicc aux1, aux2;
-        aux1 = n.getDerecho();
-        aux2 = n;
-        if (aux1 != null) {
-            // o recursiva
-            while (aux1.getIzquierdo() != null) {
-                // busco el mas a la izq de la derecha
-                aux2 = aux1;
-                aux1 = aux1.getIzquierdo();
-            }
-        }
-        n.setClave(aux1.getClave());
-        n.setDato(aux1.getDato());
-
-        NodoAVLdicc hijo = aux1.getDerecho();
-
-        if (aux2.getIzquierdo().getClave().equals(aux1.getClave())) {
-            aux2.setIzquierdo(hijo);
-        } else {
-            aux2.setDerecho(hijo);
-        }
-
-    }
-        */
+    
     private void eliminarCon2Hijos(NodoAVLdicc n, NodoAVLdicc reemplazo, NodoAVLdicc aux, NodoAVLdicc padre) {
         if (reemplazo.getIzquierdo() != null) {
             eliminarCon2Hijos(n, reemplazo.getIzquierdo(), reemplazo, aux);

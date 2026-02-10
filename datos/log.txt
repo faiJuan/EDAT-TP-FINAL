@@ -404,3 +404,53 @@
 [2026/02/05 00:25:24] - Consulta: camino entre Haedo y La Matanza con limite de 550 km
 
 [2026/02/05 00:26:14] - Consulta: camino entre Haedo y La Matanza con limite de 540 km
+
+--------Inicia la ejecucion del programa--------
+
+[2026/02/10 03:45:35] - Se realizo la carga inicial de datos
+
+[2026/02/10 03:47:10] - La estacion: Tigri se registro exitosamente
+
+[2026/02/10 03:47:21] - Consulta informacion de estaciones
+
+[2026/02/10 03:48:30] - Se elimino la estacion Merlo
+
+[2026/02/10 03:48:43] - Consulta informacion de estaciones
+
+--------Inicia la ejecucion del programa--------
+
+[2026/02/10 04:02:43] - Se realizo la carga inicial de datos
+
+[2026/02/10 04:03:08] - Consulta: camino que pasa por menos estaciones entre Constitucion y Floresta
+
+[2026/02/10 04:03:56] - Consulta: camino con menos km entre: Haedo y Marcos Paz
+
+[2026/02/10 04:04:41] - Consulta: camino entre Haedo y Marcos Paz con limite de 600 km
+
+[2026/02/10 04:05:14] - Consulta: camino entre Haedo y Marcos Paz con limite de 491 km
+
+--------Inicia la ejecucion del programa--------
+
+[2026/02/10 13:20:30] - Se realizo la carga inicial de datos
+
+[2026/02/10 13:22:51] - Se elimino la estacion Merlo
+
+[2026/02/10 13:23:01] - Consulta informacion de estaciones
+
+--------Inicia la ejecucion del programa--------
+
+[2026/02/10 13:24:04] - La estacion: Tigri se registro exitosamente
+
+[2026/02/10 13:24:26] - Consulta informacion de estaciones
+
+--------Inicia la ejecucion del programa--------
+
+[2026/02/10 13:24:38] - Se realizo la carga inicial de datos
+
+[2026/02/10 13:25:07] - La estacion: Tigri se registro exitosamente
+
+[2026/02/10 13:25:20] - Consulta informacion de estaciones
+
+[2026/02/10 13:25:45] - Se elimino la estacion Merlo
+
+[2026/02/10 13:25:55] - Consulta informacion de estaciones
